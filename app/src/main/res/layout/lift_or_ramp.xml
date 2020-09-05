@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/LiftOrRampRelativeLayoutInsider">
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/LiftOrRampLinearLayout">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/LiftRelativeLayout">
+
+        <TextView
+            android:text="@string/lift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewLift"
+            android:textSize="24sp"
+            android:layout_toRightOf="@+id/imageViewLift"
+            android:layout_toEndOf="@+id/imageViewLift"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorLightBlack" />
+
+        <ImageView
+            app:srcCompat="@drawable/icon_departure"
+            android:layout_centerVertical="true"
+            android:id="@+id/imageViewLift"
+            android:scaleType="centerCrop"
+            android:layout_margin="10dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorLightGrayTransparent"
+            android:id="@+id/RampRelativeLayout">
+
+            <TextView
+                android:text="@string/ramp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewRamp"
+                android:textSize="24sp"
+                android:textColor="@color/colorLightBlack"
+                android:layout_toRightOf="@+id/imageViewRamp"
+                android:layout_toEndOf="@+id/imageViewRamp"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                app:srcCompat="@drawable/icon_departure"
+                android:id="@+id/imageViewRamp"
+                android:scaleType="centerCrop"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:layout_height="60dp"
+                android:layout_width="60dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

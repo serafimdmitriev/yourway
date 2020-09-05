@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorScrollViewTitle">
+
+    <TextView
+        android:text="Route built!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textCaptionTitle"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textCaptionFirstText"
+        android:layout_below="@+id/textCaptionTitle"
+        android:layout_alignLeft="@+id/textCaptionTitle"
+        android:layout_alignStart="@+id/textCaptionTitle"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textCaptionSecondText"
+        android:layout_below="@+id/textCaptionFirstText"
+        android:layout_alignLeft="@+id/textCaptionFirstText"
+        android:layout_alignStart="@+id/textCaptionFirstText"
+        android:layout_marginBottom="9dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>
